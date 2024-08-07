@@ -10,7 +10,7 @@ func TestNewDeck(t *testing.T) {
 	if len(d) != 52 {
 		t.Errorf("Expected deck length of 52, but got %v", len(d))
 	}
-	
+
 	if d[0] != "Ace of Hearts" {
 		t.Errorf("Expected first card of Ace of Hearts, but got %v", d[0])
 	}
@@ -19,3 +19,4 @@ func TestNewDeck(t *testing.T) {
 		t.Errorf("Expected last card of King of Spades, but got %v", d[len(d)-1])
 	}
 }
+
